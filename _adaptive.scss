@@ -1,0 +1,37 @@
+@mixin breakpoint($point) {
+   @if $point == qq {
+      @media(max-width:1030px) {
+         @content;
+      }
+   }
+   @else if $point == ww {
+      @media(max-width:890px) {
+         @content;
+      }
+   }
+   @else if $point == tt {
+      @media(max-width:890px) {
+         @content;
+      }
+   }
+   @else if $point == ee {
+      @media(max-width:760px) {
+         @content;
+      }
+   }
+   @else if $point == yy {
+      @media(max-width:710px) {
+         @content;
+      }
+   }
+   @else if $point == rr {
+      @media(max-width:570px) {
+         @content;
+      }
+   }
+   @else if $point == uu {
+      @media(max-width:520px) {
+         @content;
+      }
+   }  
+}
