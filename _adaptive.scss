@@ -14,13 +14,30 @@
          @content;
       }
    }
+   @else if $point == gg {
+      @media(max-width:850px) {
+         @content;
+      }
+   }
    @else if $point == ee {
-      @media(max-width:760px) {
+      @media(max-width:785px) {
          @content;
       }
    }
    @else if $point == yy {
       @media(max-width:710px) {
+         @content;
+      }
+   }
+   // 
+   @else if $point == ff {
+      @media(max-width:665px) {
+         @content;
+      }
+   }
+   // 
+   @else if $point == pp {
+      @media(max-width:590px) {
          @content;
       }
    }
@@ -34,4 +51,9 @@
          @content;
       }
    }  
+   @else if $point == ii {
+      @media(max-width:440px) {
+         @content;
+      }
+   }
 }

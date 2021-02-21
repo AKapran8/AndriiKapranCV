@@ -18,33 +18,36 @@
 
 <body>
    <div class="wrapper">
+      </header> -->
       <header class="header">
          <div class="container">
             <div class="header__row">
-               <div class="header__logo">
-                  <img src="" alt="Logo">
+               <a href="#" class="header__logo">
+                  <img src="img/logo.svg" alt="Logo">
+               </a>
+               <div class="header__burger">
+                  <span></span>
                </div>
-               <ul class="header__nav">
-                  <li class="header__item">
-                     <a href="#">Me</a>
-                  </li>
-                  <li class="header__item">
-                     <a href="#">Skills</a>
-                  </li>
-                  <li class="header__item">
-                     <a href="#">Education</a>
-                  </li>
-                  <li class="header__item">
-                     <a href="#">Projects</a>
-                  </li>
-                  <li class="header__item">
-                     <a href="#">Certificates</a>
-                  </li>
-               </ul>
+               <nav class="header__menu">
+                  <ul class="header__list">
+                     <li>
+                        <a href="#me" class="header__link" id="btn__me">Information</a>
+                     </li>
+                     <li>
+                        <a href="#skills" class="header__link" id="btn__skills">Skills</a>
+                     </li>
+                     <li>
+                        <a href="#education" class="header__link" id="btn__education">Education</a>
+                     </li>
+                     <li>
+                        <a href="#projects" class="header__link" id="btn__projects">Last Projects</a>
+                     </li>
+                  </ul>
+               </nav>
             </div>
          </div>
       </header>
-      <section class="me">
+      <section class="me" id="me">
          <div class="container">
             <div class="me__row">
                <div class="me__text">
@@ -93,7 +96,7 @@
             </div>
          </div>
       </section>
-      <section class="skills">
+      <section class="skills" id="skills">
          <div class="container">
             <h2 class="skills__title title">Skills</h2>
             <div class="skills__row">
@@ -116,7 +119,7 @@
             </div>
          </div>
       </section>
-      <section class="education">
+      <section class="education" id="education">
          <div class="container">
             <div class="education__title title">Education</div>
             <div class="education__item">
@@ -128,21 +131,17 @@
             </div>
          </div>
       </section>
-      <!-- !!Finish IT -->
-      <!-- <section class="project">
+      <section class="projects" id='projects'>
          <div class="container">
-            <h2 class="project__title title">Last project</h2>
+            <h2 class="project__title title">Last Projects</h2>
          </div>
       </section>
-      <section class="certificates">
-         <div class="container">
-            <h2 class="certificates__title title">Certificates</h2>
-         </div>
-      </section> -->
-
-
-
    </div>
+
+   <!-- scripts -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src='js/script.js'></script>
+
 </body>
 
 </html>
