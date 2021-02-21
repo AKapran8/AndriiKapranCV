@@ -35,6 +35,7 @@ body {
    max-width: 1200px;
    margin: 0 auto;
 }
+
 .title {
    font-weight: 700;
    font-size: 64px;
@@ -107,7 +108,6 @@ body {
          background-color: #18b5a4;
          padding: 80px 10px 20px 10px;
          transition: all 0.3s ease 0s;
-         overflow: auto; 
       } 
    }
 
@@ -128,8 +128,10 @@ body {
          display: block;
       }   
    }
+
    &__list li {
       margin-left: 32px;
+
       @include breakpoint (ff) {
          margin-bottom: 20px;
       } 
@@ -192,6 +194,7 @@ body {
          &:before {
             top: 0;
          }
+
          &:after {
             bottom: 0;
          }
@@ -200,6 +203,7 @@ body {
             transform: rotate(45deg);
             top: 9px;
          }
+
          &.active:after {
             transform: rotate(-45deg);
             bottom: 9px;
@@ -208,10 +212,6 @@ body {
    }
 
 }
-
-
-
-   
 
 //  Me section
 .me  {
@@ -240,6 +240,7 @@ body {
 
    &__text {
       color: #fff;
+      
       @include breakpoint (rr) {
          text-align: center;
       }

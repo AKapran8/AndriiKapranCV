@@ -1,3 +1,4 @@
+// Открытие и закрытие блока
 $(document).ready(function () {
    $('.header__burger').click(function (event) {
       $('.header__burger, .header__menu').toggleClass('active');
@@ -5,6 +6,13 @@ $(document).ready(function () {
    });
 });
 
+// пропаха бургер меню при клике на элемент
+$(document).ready(function () {
+   $('.header__link').click(function (event) {
+      $('.header__burger, .header__menu').toggleClass('active');
+      $('body').toggleClass('lock');
+   });
+});
 
 // Плавный скролл
 $(document).ready(function () {
