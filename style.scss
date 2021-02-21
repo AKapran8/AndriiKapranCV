@@ -94,7 +94,7 @@ body {
       z-index: 3;
       
       @include breakpoint (ff) {
-         flex: 0 0 115 px;
+         flex: 0 0 115px;
      }
    }
 
@@ -240,7 +240,7 @@ body {
 
    &__text {
       color: #fff;
-      
+
       @include breakpoint (rr) {
          text-align: center;
       }
@@ -321,7 +321,7 @@ body {
    }
 
    &__phone {
-      margin-top: 3px 0 0 0;
+      margin-top: 3px;
       display: block;
    }
 
@@ -537,35 +537,6 @@ body {
    background: linear-gradient(0deg, #000000 0%, #20202D 100%);
 }
 
-.order {
-   display: none;
-   background-color: linear-gradient(0deg, #000000 0%, #20202D 100%);
-   position: fixed;
-   left: calc(50% - 150px);
-   top: 30%;
-   width: 300px;
-   height: 300px;
-
-   &__container {
-      margin: 50px 70px;
-      width: 90%;
-      margin: 0 auto;
-   }
-   &__btn {
-      padding: 15px 48px;
-      background: #FECB38;
-      border-radius: 88px;
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 19px;
-      color: #FFFFFF;
-   }
-   
-   &__btn:hover {
-      background-color: #dda807;
-      transition: 0.3s;
-   }
-}
 
 
 

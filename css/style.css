@@ -168,8 +168,8 @@ body {
 @media (max-width: 665px) {
   .header__logo {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 115 px;
-            flex: 0 0 115 px;
+        -ms-flex: 0 0 115px;
+            flex: 0 0 115px;
   }
 }
 
@@ -449,7 +449,7 @@ body {
 }
 
 .me__phone {
-  margin-top: 3px 0 0 0;
+  margin-top: 3px;
   display: block;
 }
 
@@ -763,37 +763,5 @@ body {
   padding: 30px 0;
   background: -webkit-gradient(linear, left bottom, left top, from(#000000), to(#20202D));
   background: linear-gradient(0deg, #000000 0%, #20202D 100%);
-}
-
-.order {
-  display: none;
-  background-color: linear-gradient(0deg, #000000 0%, #20202D 100%);
-  position: fixed;
-  left: calc(50% - 150px);
-  top: 30%;
-  width: 300px;
-  height: 300px;
-}
-
-.order__container {
-  margin: 50px 70px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.order__btn {
-  padding: 15px 48px;
-  background: #FECB38;
-  border-radius: 88px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  color: #FFFFFF;
-}
-
-.order__btn:hover {
-  background-color: #dda807;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 /*# sourceMappingURL=style.css.map */
