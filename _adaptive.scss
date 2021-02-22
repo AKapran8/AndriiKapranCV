@@ -4,11 +4,6 @@
          @content;
       }
    }
-   @else if $point == ww {
-      @media(max-width:890px) {
-         @content;
-      }
-   }
    @else if $point == tt {
       @media(max-width:890px) {
          @content;

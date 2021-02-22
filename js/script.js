@@ -48,3 +48,19 @@ $(document).ready(function () {
       }, 1700);
    });
 });
+
+// Вычисление возраст
+let age = document.querySelector('.me__age');
+
+function get_current_age(date) {
+   let hb = (new Date().getTime() - new Date(date)) / (24 * 3600 * 365.25 * 1000) | 0;
+   age.innerHTML = `Age: ${hb}`;
+};
+
+get_current_age('2001-01-12');
+
+
+
+
+
+
