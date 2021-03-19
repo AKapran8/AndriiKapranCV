@@ -4,6 +4,11 @@
          @content;
       }
    }
+   @else if $point == sw {
+      @media(max-width:990px) {
+         @content;
+      }
+   }
    @else if $point == tt {
       @media(max-width:890px) {
          @content;

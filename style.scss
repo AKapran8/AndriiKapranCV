@@ -20,6 +20,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 @import 'adaptive';
 
 // general styles
+html {
+   scroll-behavior: smooth;
+}
 body {
    font-family: 'Roboto', sans-serif;
 
@@ -156,7 +159,8 @@ body {
 
    &__link:hover, &__link:active {
       color:#dda807;
-      border-bottom: 2px solid #dda807;   
+      border-bottom: 2px solid #dda807;
+      transition: 0.33s;   
    }
 
    &__burger {
@@ -350,6 +354,7 @@ body {
 
    &__item {
       margin-right: 24px;
+      
 
       @include breakpoint (uu) {
          margin-right: 12px;
@@ -478,7 +483,11 @@ body {
 // Education section
 .education {
    background: linear-gradient(180deg, #000000 0%, #20202D 100%);
-   padding-bottom: 30px;
+   padding-bottom: 80px;
+
+   @include breakpoint (pp) {
+      padding-bottom: 30px;
+   }
 
    &__item {
       margin-top: 20px;
@@ -536,9 +545,123 @@ body {
 
 }
 
-.projects {
+.project {
    padding: 30px 0;
-   background: linear-gradient(0deg, #000000 0%, #20202D 100%);
+   background-color: #20202D;
+
+   &__title {
+      margin-bottom: 50px;
+
+      @include breakpoint (pp) {
+         margin-bottom: 20px;
+      }
+   }
+   
+   &__slide {
+      display: flex;
+      align-items: center;
+
+      @include breakpoint (sw) {
+         flex-direction: column;
+      }
+   }
+
+   &__img img {
+      display: block;
+      border: 5px solid white;
+      border-radius: 10px;
+      width: 100%;
+     
+      @include breakpoint (sw) {
+         margin: 0 auto;
+      }
+      @include breakpoint (yy) {
+         width: 80%;
+      }
+   }
+
+   &__about {
+      margin: 15px 0 0 100px;
+
+      @include breakpoint (qq) {
+         margin: 15px 0 0 70px;
+      }
+      @include breakpoint (sw) {
+         text-align: center;
+         margin: 15px 0 0 0;
+      }
+   }
+
+   &__name {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 42px;
+
+      @include breakpoint (qq) {
+         font-size: 28px;
+         line-height: 40px;
+      }
+      @include breakpoint (ii) {
+         font-size: 20px;
+         line-height: 32px;
+      }
+      
+      a {
+         color: white;
+      }
+   }
+  
+
+   &__descr {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      @include breakpoint (sw) {
+         justify-content: space-between;
+      }
+      @include breakpoint (uu) {
+        flex-direction: column;
+      }   
+   }
+
+   &__time {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      padding: 0 10px;
+
+      @include breakpoint (uu) {
+         margin: 20px 0 0 100px;
+      } 
+       
+
+      &-img {
+         margin-right: 13px;
+         display: block;
+      }
+
+      &-descr {
+         color: #FFFFFF;
+      }
+   }
+
+   &__items-title {
+      font-weight: 700;
+      font-size: 29px;
+      line-height: 34px;
+      margin-bottom: 5px;
+      
+      @include breakpoint (ee) {
+         font-size: 24px;
+      }
+      @include breakpoint (sw) {
+         font-size: 16px;
+      }  
+   }
+   
+
+  
 }
 
 

@@ -7,6 +7,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <!-- Style  -->
    <link rel="stylesheet" href="css/style.css">
+   <!-- Slider -->
+   <link rel="stylesheet" href="css/animate.min.css">
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
    <!-- Added fonts -->
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -38,9 +41,9 @@
                      <li>
                         <a href="#education" class="header__link" id="btn__education">Education</a>
                      </li>
-                     <!-- <li>
-                        <a href="#projects" class="header__link" id="btn__projects">Last Projects</a>
-                     </li> -->
+                     <li>
+                        <a href="#project" class="header__link" id="btn__project">Last Projects</a>
+                     </li>
                   </ul>
                </nav>
                <p class="validation">
@@ -135,14 +138,76 @@
             </div>
          </div>
       </section>
-      <!-- <section class="projects" id='projects'>
+      <section class="project" id='project'>
          <div class="container">
             <h2 class="project__title title">Last Projects</h2>
+            <div class="swiper-container project__slider">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper">
+                  <!-- ! 1 Slides -->
+                  <div class="swiper-slide project__slide">
+                     <a href="https://andriikapran.github.io/space/" target="_blank" class="project__img">
+                        <img src="img/projects/spaceX.png" alt="SpaceX">
+                     </a>
+                     <div class="project__about">
+                        <h2 class="project__name">
+                           <a href="https://andriikapran.github.io/space/" target="_blank">
+                              Company website "SpaceX"
+                           </a>
+                        </h2>
+                        <div class="project__descr">
+                           <div class="project__time">
+                              <div class="project__time-img">
+                                 <img src="img/projectsDescr/time.svg" alt="Time">
+                              </div>
+                              <div class="project__time-descr">
+                                 <h3 class="project__time-title project__items-title">Timing</h3>
+                                 <p class="project__time-descr">working day</p>
+                              </div>
+                           </div>
+                           <div class="project__time">
+                              <div class="project__time-img">
+                                 <img src="img/projectsDescr/technologies.svg" alt="Technologies">
+                              </div>
+                              <div class="project__time-descr">
+                                 <h3 class="project__time-title project__items-title">Technologies</h3>
+                                 <p class="project__time-descr">HTML, CSS, JavaScript</p>
+                              </div>
+                           </div>
+                           <div class="project__time">
+                              <div class="project__time-img">
+                                 <img src="img/projectsDescr/comment.svg" alt="Comment">
+                              </div>
+                              <div class="project__time-descr">
+                                 <h3 class="project__time-title project__items-title">Comment</h3>
+                                 <p class="project__time-descr">My first website</p>
+                              </div>
+                           </div>
+                        </div>
+
+                     </div>
+                  </div>
+                  <!-- ! 2 Slides -->
+
+               </div>
+               <!-- If we need pagination -->
+               <!-- <div class="projects-pagination"></div> -->
+
+               <!-- If we need navigation buttons 
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+   
+               If we need scrollbar -->
+               <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+
          </div>
-      </section> -->
+      </section>
    </div>
 
    <!-- scripts -->
+   <script src="js/swiper-bundle.min.js"></script>
+   <script src="js/wow.min.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src='js/script.js'></script>
 
