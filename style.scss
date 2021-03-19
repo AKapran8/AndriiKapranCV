@@ -23,6 +23,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 html {
    scroll-behavior: smooth;
 }
+
 body {
    font-family: 'Roboto', sans-serif;
 
@@ -296,6 +297,7 @@ body {
       font-size: 64px;
       line-height: 75px;
       margin: 8px 0;
+
       @include breakpoint (tt) {
          font-size: 59px;
          line-height: 70px;
@@ -377,8 +379,7 @@ body {
       @include breakpoint (ii) {
          margin-right: 0;
       }
-   }
-   
+   }  
 }
 
 // Skills section 
@@ -542,7 +543,6 @@ body {
         margin-top: 20px;
       }
    }
-
 }
 
 .project {
@@ -611,7 +611,6 @@ body {
       }
    }
   
-
    &__descr {
       display: flex;
       flex-wrap: wrap;
@@ -635,7 +634,6 @@ body {
          margin: 20px 0 0 100px;
       } 
        
-
       &-img {
          margin-right: 13px;
          display: block;
@@ -659,9 +657,6 @@ body {
          font-size: 16px;
       }  
    }
-   
-
-  
 }
 
 
