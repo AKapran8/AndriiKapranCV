@@ -1,17 +1,14 @@
 // Slider
 new WOW().init();
 var mySwiper = new Swiper(".swiper-container", {
-   pagination: {
-      el: ".projects-pagination",
-      bulletClass: "projects-bullet",
-      bulletActiveClass: "projects-bullet-active",
-      clickable: true,
-
-   },
    loop: true,
    autoplay: true,
    autoplayTimeout: 3400,
-   speed: 1500
+   speed: 1500,
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+   },
 });
 
 // Открытие и закрытие блока
